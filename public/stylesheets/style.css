@@ -1,0 +1,139 @@
+/* General */
+.container, header, footer {
+  max-width: 980px;
+  margin: auto;
+}
+.wio-link {
+  background-color: #31a8fd !important;
+  color: white;
+  position: fixed;
+  z-index: 10000;
+  padding: 6px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  bottom: 30px;
+  left: 30px;
+  height: 50px;
+  width: 50px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 2px 7px 0 rgba(90, 90, 140, 0.4);
+          box-shadow: 0 2px 7px 0 rgba(90, 90, 140, 0.4); }
+.wio-link img {
+  display: none;
+}
+.wio-link:after {
+  font-family: 'Material Icons';
+  content: '\E3C9';
+  color: white;
+  font-size: 24px;
+}
+
+/* Header */
+.site-header {
+  height: 30px;
+  padding: 20px 0;
+}
+.site-header,
+.site-header a {
+  color: #484d52;
+  font-weight: 700;
+}
+.site-header nav a:hover {
+  color: #72767B;
+}
+.site-header .logo {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 900;
+}
+.site-header nav {
+  float: right;
+}
+.site-header nav ul {
+  margin: 0;
+}
+.site-header nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+/* Homepage */
+.site-image {
+  margin-bottom: 40px;
+}
+
+/* Footer */
+footer {
+  color: #9A9A9A;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+footer p {
+  border-top: 1px solid #DADADA;
+  padding: 2rem 0;
+  margin-bottom: 0;
+}
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+}
+.footer-logo {
+  width: 30px;
+  margin-top: 10px;
+}
+
+/* Help Page */
+.help img {
+  margin-bottom: 32px;
+  -webkit-box-shadow: 1px 1px 15px 2px #D6D6D6;
+  box-shadow: 1px 1px 15px 2px #D6D6D6;
+}
+
+/* Media Queries */
+@media (max-width: 1060px) {
+  .site-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .wio-link {
+    display: none;
+  }
+  .site-header {
+    height: auto;
+  }
+  .site-header .logo {
+    display: block;
+    text-align: center;
+  }
+  .site-header nav {
+    float: none;
+    text-align: center;
+  }
+  .site-header nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
